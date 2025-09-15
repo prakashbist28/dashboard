@@ -61,7 +61,7 @@ const CspmDashboard = ({ search }) => {
 
   return (
     <section className="p-2 md:p-6">
-      <h2 className="text-2xl flex font-bold mb-6">{cspmDashboard.name}</h2>
+      <h2 className="text-xl md:text-2xl flex font-bold mb-6">{cspmDashboard.name}</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredWidgets.map((widget) => (
