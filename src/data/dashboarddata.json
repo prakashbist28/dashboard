@@ -1,0 +1,137 @@
+{
+  "dashboards": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "type": "donut",
+      "charts": [
+        {
+          "id": "cspm-1",
+          "name": "Cloud Accounts",
+          "tagValues": {
+            "Connected": 2,
+            "Not connected": 2
+          },
+          "colors": {
+            "Connected": "#00a4fc",
+            "Not connected": "#92d7fc"
+          }
+        },
+        {
+          "id": "cspm-2",
+          "name": "Cloud Account Risk Assessment",
+          "tagValues": {
+            "Failed": 1689,
+            "Warning": 680,
+            "Not available": 360,
+            "Passed": 7253
+          },
+          "colors": {
+            "Failed": "#e00000",
+            "Warning": "#e3c500",
+            "Not available": "#b5b5b5",
+            "Passed": "#00cc1b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard",
+      "type": "bar",
+      "charts": [
+        {
+          "id": "cwpp-1",
+          "name": "Workload Security",
+          "tags": ["workload", "security"],
+          "tagValues": {
+            "VMs": 40,
+            "Containers": 60,
+            "Functions": 25
+          },
+          "colors": {
+            "VMs": "#1f77b4",
+            "Containers": "#ff7f0e",
+            "Functions": "#2ca02c"
+          }
+        },
+        {
+          "id": "cwpp-2",
+          "name": "Top Vulnerabilities",
+          "tags": ["vulnerabilities", "top"],
+          "tagValues": {
+            "SQL Injection": 12,
+            "Cross-Site Scripting": 8,
+            "Privilege Escalation": 15
+          },
+          "colors": {
+            "SQL Injection": "#d62728",
+            "Cross-Site Scripting": "#9467bd",
+            "Privilege Escalation": "#8c564b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "registry",
+      "name": "Registry Scan Dashboard",
+      "type": "horizontal-bar",
+      "charts": [
+        {
+          "id": "registry-1",
+          "name": "Image Risk Assessment",
+          "labels": ["Issue level"],
+          "datasets": [
+            {
+              "label": "Critical",
+              "data": [10],
+              "backgroundColor": "#cf2102"
+            },
+            {
+              "label": "High",
+              "data": [6],
+              "backgroundColor": "#d46f11"
+            },
+            {
+              "label": "Medium",
+              "data": [12],
+              "backgroundColor": "#f5b411"
+            },
+            {
+              "label": "low",
+              "data": [12],
+              "backgroundColor": "#d9d907"
+            }
+          ]
+        },
+        {
+          "id": "registry-2",
+          "name": "Image Security Issues",
+          "labels": ["Issue level"],
+          "datasets": [
+            {
+              "label": "Critical",
+              "data": [4],
+              "backgroundColor": "#cf2102"
+            },
+            {
+              "label": "High",
+              "data": [6],
+              "backgroundColor": "#d46f11"
+            },
+            {
+              "label": "Medium",
+              "data": [10],
+              "backgroundColor": "#f5b411"
+            },
+            {
+              "label": "low",
+              "data": [7],
+              "backgroundColor": "#d9d907"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
