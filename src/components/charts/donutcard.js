@@ -33,7 +33,7 @@ const DonutCard = ({ title, data, colors, onDelete }) => {
         position: "right",
         labels: {
           boxWidth: 20,
-          padding: 15,
+          padding: 5,
           font: {
             size: (ctx) => {
               const h = ctx.chart.chartArea

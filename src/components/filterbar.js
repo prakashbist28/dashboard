@@ -30,7 +30,7 @@ const FilterSidebar = ({ onClose }) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 w-2/3 lg:w-1/3 h-full bg-white shadow-lg shadow-black/50 z-50 overflow-y-auto
+      className={`fixed top-0 right-0 w-3/4 lg:w-1/3 h-full bg-white shadow-lg shadow-black/50 z-50 overflow-y-auto
         ${closing ? "animate-fadeOut" : "animate-fadeIn"}`}
     >
       {/* Header */}

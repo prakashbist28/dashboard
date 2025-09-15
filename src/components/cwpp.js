@@ -64,7 +64,7 @@ const CwppDashboard = ({ search }) => {
   });
 
   return (
-    <section className="p-6">
+    <section className="md:p-6">
       <h2 className="text-xl md:text-2xl flex font-bold mb-6">{cwppCategory.name}</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
